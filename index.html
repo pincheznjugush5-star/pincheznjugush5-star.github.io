@@ -59,10 +59,14 @@
     .service-card{padding:30px;min-height:270px;display:flex;flex-direction:column;align-items:start}.service-icon{width:46px;height:46px;display:grid;place-items:center;color:#087e78;border:1px solid rgba(23,146,135,.3);border-radius:13px;background:rgba(80,213,187,.17);margin-bottom:auto}.service-icon svg{width:22px;height:22px}
     .service-number{font-size:12px;color:#076c66;font-weight:700;margin:25px 0 7px}.service-card h3{font-size:23px;letter-spacing:-.04em;margin-bottom:9px}.service-card p,.project-body p,.trust-card p{color:var(--muted);font-size:14px;margin:0}
     .projects{background:rgba(191,239,230,.24)}.filters{margin-bottom:25px}.filter-button{min-height:46px;padding:10px 17px;border:1px solid #6fa6a0;border-radius:100px;background:rgba(255,255,255,.8);color:#174b4b;font-size:14px;font-weight:700;cursor:pointer}.filter-button:hover{background:#fff}.filter-button[aria-pressed="true"]{background:#176c68;color:#fff;border-color:#176c68}
-    .project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project-card{overflow:hidden}.project-card[hidden]{display:none}
-    .project-media{height:205px;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#bfe9e0,#dce5fb 55%,#e5f4d8);border-bottom:1px solid var(--line);text-align:center;padding:12px;overflow:hidden}
-    .preview-trigger{display:block;width:100%;height:100%;border:0;background:transparent;padding:0;cursor:zoom-in;color:inherit}.concept{width:100%;height:100%;position:relative;display:grid;place-items:center;overflow:hidden}.concept-screen{width:min(86%,270px);height:143px;background:#fafffd;border:7px solid #264c50;border-radius:14px;box-shadow:0 18px 28px rgba(25,76,78,.22);overflow:hidden;text-align:left;transform:rotate(-3deg)}.concept-screen.phone{width:95px;height:165px;border-radius:20px;transform:rotate(5deg)}.concept-bar{height:22px;background:#173e43;color:white;font-size:9px;padding:4px 8px}.concept-title{font:bold 12px 'Space Grotesk',sans-serif;color:#17323b;margin:9px 10px 5px}.concept-row{margin:6px 10px;padding:6px;background:#def5e9;border-radius:5px;font-size:9px;color:#235653}.concept-row.accent{background:#68d9bc;color:#093b3a}.concept-qr{width:54px;height:54px;margin:8px auto;background:repeating-conic-gradient(#173e43 0 25%,#fff 0 50%) 0 0/14px 14px;border:5px solid white;box-shadow:0 0 0 1px #a9d7ca}.concept-label{position:absolute;bottom:9px;right:12px;background:#fff;border:1px solid #9dc8bd;border-radius:100px;padding:4px 10px;font-size:11px;font-weight:700;color:#175f5b}.preview-trigger:hover .concept-screen{transform:translateY(-3px) rotate(0)}.preview-dialog{border:1px solid #b8d5ce;border-radius:24px;max-width:min(560px,calc(100% - 32px));width:100%;padding:28px;background:#f6fffc;color:#17323b;box-shadow:0 30px 90px #123b3c66}.preview-dialog::backdrop{background:#102e36bb;backdrop-filter:blur(5px)}.preview-dialog .project-media{height:260px;border-radius:16px}.preview-close{float:right;border:1px solid #418c83;border-radius:100px;background:white;padding:8px 13px;cursor:pointer}.preview-dialog h3{margin:15px 0 4px}
-    .project-body{padding:26px}.project-body h3{font-size:22px;letter-spacing:-.04em;margin-bottom:8px}.project-type{display:inline-block;color:#075e5a;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}.placeholder-note{font-size:12px!important;margin-bottom:18px!important}
+    .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.project-card{overflow:hidden;display:flex;flex-direction:column}.project-card[hidden]{display:none}
+    .project-media{height:245px;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#bfe9e0,#dce5fb 55%,#e5f4d8);border-bottom:1px solid var(--line);text-align:center;padding:12px;overflow:hidden}
+    .project-media img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;margin:auto;border-radius:12px;box-shadow:0 10px 24px rgba(17,51,54,.16);transition:transform .25s ease}
+    .preview-trigger{display:grid;place-items:center;width:100%;height:100%;border:0;background:transparent;padding:0;cursor:zoom-in;color:inherit}
+    .preview-trigger:hover img{transform:scale(1.03)}
+    .zoom-badge{position:absolute;bottom:10px;right:12px;background:rgba(255,255,255,.92);border:1px solid #9dc8bd;border-radius:100px;padding:4px 10px;font-size:11px;font-weight:700;color:#175f5b;pointer-events:none}
+    .preview-dialog{border:1px solid #b8d5ce;border-radius:24px;max-width:min(760px,calc(100% - 32px));width:100%;padding:26px;background:#f6fffc;color:#17323b;box-shadow:0 30px 90px #123b3c66}.preview-dialog::backdrop{background:#102e36bb;backdrop-filter:blur(5px)}.preview-dialog .project-media{height:auto;min-height:260px;max-height:74vh;border-radius:16px}.preview-dialog .project-media img{max-height:min(70vh,680px);width:auto}.preview-close{float:right;border:1px solid #418c83;border-radius:100px;background:white;padding:8px 13px;cursor:pointer;font-weight:700}.preview-dialog h3{margin:8px 0 4px}
+    .project-body{padding:26px;flex:1}.project-body h3{font-size:22px;letter-spacing:-.04em;margin-bottom:8px}.project-type{display:inline-block;color:#075e5a;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}.placeholder-note{font-size:12px!important;margin-bottom:18px!important}
     .case-details{margin:0;padding:0;list-style:none}.case-details li{padding:9px 0;border-top:1px solid var(--line);font-size:13px;color:#36575a}.case-details strong{color:var(--text)}
     .trust-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.trust-card{padding:25px;min-height:170px}.trust-card h3{font-size:19px;margin-bottom:10px}.trust-card strong{color:#075e5a}.editable{display:inline-block;border:1px dashed #6a9a95;border-radius:7px;padding:2px 6px;color:#36575a;background:rgba(255,255,255,.5)}
     .skills-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,6vw,85px)}.skills-intro{color:var(--muted);font-size:17px;margin-top:22px}.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.skill-item{display:flex;align-items:center;gap:12px;padding:18px;font-size:14px;font-weight:600}.skill-item svg{width:19px;height:19px;flex:none;color:#087e78}
@@ -71,9 +75,9 @@
     .floating-whatsapp{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:2147483000;min-height:52px;min-width:52px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 17px;border-radius:100px;background:#25d366;color:#10221a;font-size:14px;font-weight:700;border:1px solid #fff;box-shadow:0 8px 22px rgba(0,0,0,.2)}.floating-whatsapp:hover{background:#49e184}.floating-whatsapp svg{width:21px;height:21px}
     footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{text-decoration:underline;color:#075e5a;font-weight:600}
     .not-found{display:none;min-height:60vh;padding:90px 0}.not-found.active{display:block}.not-found p{max-width:520px;color:var(--muted);margin:20px 0}
-    @media(max-width:980px){.services,.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-visual{height:430px}}
-    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0}.hero-visual{width:min(100%,580px);justify-self:center}.section{padding:70px 0}.section-head{display:block}.section-head p{margin-top:18px;max-width:600px}.contact,.skills-grid{grid-template-columns:1fr}}
-    @media(max-width:650px){.header-inner{min-height:72px}.brand{font-size:clamp(14px,3.8vw,17px)}.menu-toggle{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;padding:15px 18px 22px;background:rgba(248,255,253,.97);backdrop-filter:blur(22px);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{display:flex;align-items:center;min-height:44px;padding:10px}nav .nav-cta{justify-content:center;margin-top:8px}.hero{padding:53px 0 65px}h1{font-size:clamp(43px,11vw,70px)}.hero-copy{font-size:16px}.hero-visual{height:370px;border-radius:110px 110px 18px 18px}.services,.project-grid{grid-template-columns:1fr}.service-card{min-height:235px}.contact{margin-bottom:35px}.floating-whatsapp{right:max(12px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom))}}
+    @media(max-width:980px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-visual{height:430px}}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0}.hero-visual{width:min(100%,580px);justify-self:center}.section{padding:70px 0}.section-head{display:block}.section-head p{margin-top:18px;max-width:600px}.contact,.skills-grid,.project-grid{grid-template-columns:1fr}}
+    @media(max-width:650px){.header-inner{min-height:72px}.brand{font-size:clamp(14px,3.8vw,17px)}.menu-toggle{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;padding:15px 18px 22px;background:rgba(248,255,253,.97);backdrop-filter:blur(22px);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{display:flex;align-items:center;min-height:44px;padding:10px}nav .nav-cta{justify-content:center;margin-top:8px}.hero{padding:53px 0 65px}h1{font-size:clamp(43px,11vw,70px)}.hero-copy{font-size:16px}.hero-visual{height:370px;border-radius:110px 110px 18px 18px}.services{grid-template-columns:1fr}.service-card{min-height:235px}.contact{margin-bottom:35px}.floating-whatsapp{right:max(12px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom))}}
     @media(max-width:480px){.trust-grid,.skill-list{grid-template-columns:1fr}.hero-visual{height:320px}.contact-form{padding:20px}.contact-links a{width:100%;justify-content:center}.visual-caption{font-size:12px;left:12px;right:12px;bottom:12px;padding:10px}.filters{gap:8px}.filter-button{font-size:12px;padding:9px 12px}}
     .header-actions{display:flex;align-items:center;gap:8px;flex:none}.theme-toggle{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:8px 14px;border:1px solid #4c8985;border-radius:100px;background:rgba(255,255,255,.78);color:#075e5a;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;box-shadow:0 4px 14px rgba(30,88,87,.08)}.theme-toggle:hover{background:#fff}.theme-toggle svg{width:18px;height:18px;flex:none}
     .theme-sun{display:none}html[data-theme="dark"] .theme-sun{display:inline-flex}html[data-theme="dark"] .theme-moon{display:none}.theme-moon,.theme-sun{align-items:center}.theme-moon svg,.theme-sun svg{width:18px;height:18px}
@@ -81,7 +85,7 @@
     html[data-theme="dark"] body{background:radial-gradient(ellipse 48% 36% at 88% 7%,rgba(25,148,139,.27),transparent 78%),radial-gradient(ellipse 48% 38% at 4% 43%,rgba(91,107,192,.23),transparent 77%),radial-gradient(ellipse 45% 30% at 90% 84%,rgba(156,90,61,.19),transparent 75%),linear-gradient(145deg,#0b1922,#102a31 52%,#181f2c)}
     html[data-theme="dark"] .site-header{background:rgba(13,32,41,.9)}html[data-theme="dark"] nav a{color:#d9f1ed}html[data-theme="dark"] nav a:hover,html[data-theme="dark"] .eyebrow,html[data-theme="dark"] h1 span,html[data-theme="dark"] .service-number,html[data-theme="dark"] .project-type,html[data-theme="dark"] .trust-card strong,html[data-theme="dark"] .service-icon,html[data-theme="dark"] .skill-item svg,html[data-theme="dark"] .footer-links a{color:#79ead4}
     html[data-theme="dark"] .glass{border-color:rgba(167,226,219,.32);box-shadow:0 20px 50px rgba(0,8,15,.28),inset 1px 1px 0 rgba(255,255,255,.08)}html[data-theme="dark"] .projects{background:rgba(52,124,119,.13)}html[data-theme="dark"] .nav-cta,html[data-theme="dark"] .theme-toggle,html[data-theme="dark"] .button-secondary,html[data-theme="dark"] .filter-button,html[data-theme="dark"] .contact-links a{background:rgba(20,54,62,.95);color:#e4f9f3;border-color:#85c6bd}html[data-theme="dark"] .theme-toggle:hover,html[data-theme="dark"] .button-secondary:hover,html[data-theme="dark"] .filter-button:hover,html[data-theme="dark"] .contact-links a:hover{background:#24545b}html[data-theme="dark"] .filter-button[aria-pressed="true"]{background:#a3efd5;color:#092b2c;border-color:#a3efd5}
-    html[data-theme="dark"] .case-details li,html[data-theme="dark"] .editable{color:#cce5e1;border-color:var(--line)}html[data-theme="dark"] .case-details strong{color:var(--text)}html[data-theme="dark"] .service-icon{background:rgba(80,213,187,.14)}html[data-theme="dark"] .contact{background:linear-gradient(120deg,rgba(20,92,83,.9),rgba(18,53,63,.95) 55%,rgba(38,67,106,.83))}html[data-theme="dark"] .contact p{color:#d8eeeb}html[data-theme="dark"] .form-field input,html[data-theme="dark"] .form-field textarea{background:#142e38;color:#f1fbf8;border-color:#93c6c0}html[data-theme="dark"] .form-status.error{color:#ffb5af}html[data-theme="dark"] .form-status.success{color:#a6f5cd}html[data-theme="dark"] .editable{background:rgba(255,255,255,.06)}html[data-theme="dark"] .preview-dialog{background:#142d37;color:#f2fbf8;border-color:#82b8b0}html[data-theme="dark"] .preview-close{background:#204952;color:#f2fbf8;border-color:#85c6bd}
+    html[data-theme="dark"] .case-details li,html[data-theme="dark"] .editable{color:#cce5e1;border-color:var(--line)}html[data-theme="dark"] .case-details strong{color:var(--text)}html[data-theme="dark"] .service-icon{background:rgba(80,213,187,.14)}html[data-theme="dark"] .contact{background:linear-gradient(120deg,rgba(20,92,83,.9),rgba(18,53,63,.95) 55%,rgba(38,67,106,.83))}html[data-theme="dark"] .contact p{color:#d8eeeb}html[data-theme="dark"] .form-field input,html[data-theme="dark"] .form-field textarea{background:#142e38;color:#f1fbf8;border-color:#93c6c0}html[data-theme="dark"] .form-status.error{color:#ffb5af}html[data-theme="dark"] .form-status.success{color:#a6f5cd}html[data-theme="dark"] .editable{background:rgba(255,255,255,.06)}html[data-theme="dark"] .preview-dialog{background:#142d37;color:#f2fbf8;border-color:#82b8b0}html[data-theme="dark"] .preview-close{background:#204952;color:#f2fbf8;border-color:#85c6bd}html[data-theme="dark"] .zoom-badge{background:rgba(20,54,62,.92);color:#e4f9f3;border-color:#85c6bd}
     @media(max-width:650px){.header-actions{margin-left:auto}.theme-toggle{padding:8px 11px}.theme-toggle .theme-label{display:none}html[data-theme="dark"] nav{background:rgba(13,32,41,.98)}.floating-whatsapp{width:54px;height:54px;padding:0}.floating-whatsapp span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.contact{padding-bottom:88px}}
   </style>
 </head>
@@ -173,7 +177,7 @@
               <span class="eyebrow">Selected project stories</span>
               <h2 id="projects-title">Ideas built around real needs.</h2>
             </div>
-            <p>Explore the supplied project details and interactive concept previews below.</p>
+            <p>Explore the supplied project details and click any project visual to inspect it up close.</p>
           </div>
           <div class="filters" role="group" aria-label="Filter case studies">
             <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All projects</button>
@@ -185,17 +189,9 @@
           <div class="project-grid">
             <article id="safari-case" class="project-card glass" data-category="mobile">
               <div class="project-media">
-                <button class="preview-trigger" type="button" data-preview="safari" aria-label="Enlarge Safari Puzzle preview">
-                  <div class="concept">
-                    <div class="concept-screen phone">
-                      <div class="concept-bar">Safari Puzzle</div>
-                      <div class="concept-title">400 Levels</div>
-                      <div class="concept-row accent">20 African Worlds</div>
-                      <div class="concept-row">3D Match-3</div>
-                      <div class="concept-row">Offline &amp; Sync</div>
-                    </div>
-                    <span class="concept-label">Android Game</span>
-                  </div>
+                <button class="preview-trigger" type="button" data-preview="safari" aria-label="Enlarge Safari Puzzle visual">
+                  <img src="assets/safari-puzzle.png" alt="Safari Puzzle 3D African Wildlife Match-3 Adventure promotional graphic showing 8x8 animal tile board" loading="lazy" decoding="async">
+                  <span class="zoom-badge">Click to enlarge</span>
                 </button>
               </div>
               <div class="project-body">
@@ -212,16 +208,9 @@
 
             <article id="stylush-case" class="project-card glass" data-category="web">
               <div class="project-media">
-                <button class="preview-trigger" type="button" data-preview="stylush" aria-label="Enlarge Stylush booking concept preview">
-                  <div class="concept">
-                    <div class="concept-screen">
-                      <div class="concept-bar">Stylush Salon &amp; Barber</div>
-                      <div class="concept-title">Book Appointment</div>
-                      <div class="concept-row accent">Hair Styling · Barber · Beauty</div>
-                      <div class="concept-row">Instant Slot Confirmation</div>
-                    </div>
-                    <span class="concept-label">Web App</span>
-                  </div>
+                <button class="preview-trigger" type="button" data-preview="stylush" aria-label="Enlarge Stylush website screenshot">
+                  <img src="assets/stylush.jpg" alt="Stylush Haute Coiffure & Barbershop website homepage showing salon and appointment booking interface" loading="lazy" decoding="async">
+                  <span class="zoom-badge">Click to enlarge</span>
                 </button>
               </div>
               <div class="project-body">
@@ -239,16 +228,9 @@
 
             <article id="qrpay-case" class="project-card glass" data-category="mobile">
               <div class="project-media">
-                <button class="preview-trigger" type="button" data-preview="qrpay" aria-label="Enlarge QRPay Kenya preview">
-                  <div class="concept">
-                    <div class="concept-screen phone">
-                      <div class="concept-bar">QRPay Kenya</div>
-                      <div class="concept-title">Scan &amp; Pay</div>
-                      <div class="concept-qr"></div>
-                      <div class="concept-row accent">Verified Merchant</div>
-                    </div>
-                    <span class="concept-label">Mobile App</span>
-                  </div>
+                <button class="preview-trigger" type="button" data-preview="qrpay" aria-label="Enlarge QRPay Merchant screenshot">
+                  <img src="assets/qrpay.jpeg" alt="QRPay Merchant mobile app interface showing business wallet balance and today's sales overview" loading="lazy" decoding="async">
+                  <span class="zoom-badge">Click to enlarge</span>
                 </button>
               </div>
               <div class="project-body">
@@ -266,16 +248,9 @@
 
             <article id="kishbuilds-case" class="project-card glass" data-category="website">
               <div class="project-media">
-                <button class="preview-trigger" type="button" data-preview="kishbuilds" aria-label="Enlarge Kishbuilds website preview">
-                  <div class="concept">
-                    <div class="concept-screen">
-                      <div class="concept-bar">Kishbuilds Construction</div>
-                      <div class="concept-title">Plan &amp; Build Together</div>
-                      <div class="concept-row accent">1-on-1 Developer &amp; Mason Consultation</div>
-                      <div class="concept-row">Milestone Project Tracking</div>
-                    </div>
-                    <span class="concept-label">Business Site</span>
-                  </div>
+                <button class="preview-trigger" type="button" data-preview="kishbuilds" aria-label="Enlarge Kishbuilds Construction website visual">
+                  <img src="assets/kishbuilds.jpg" alt="Kish Builds Construction Solutions website showing boundary wall, excavation, and foundation construction services" loading="lazy" decoding="async">
+                  <span class="zoom-badge">Click to enlarge</span>
                 </button>
               </div>
               <div class="project-body">
@@ -294,7 +269,7 @@
           <dialog id="preview-dialog" class="preview-dialog" aria-labelledby="preview-title">
             <button id="preview-close" class="preview-close" type="button" aria-label="Close preview">Close ×</button>
             <h3 id="preview-title">Project visual</h3>
-            <p id="preview-description">Interactive project preview.</p>
+            <p id="preview-description">Full-size project preview.</p>
             <div id="preview-content" class="project-media"></div>
           </dialog>
         </div>
@@ -466,7 +441,7 @@
       previewOpener = button;
       const card = button.closest('.project-card');
       document.getElementById('preview-title').textContent = card.querySelector('h3').textContent + ' · Project visual';
-      const clone = button.querySelector('.concept').cloneNode(true);
+      const clone = button.querySelector('img').cloneNode(true);
       previewContent.replaceChildren(clone);
       previewDialog.showModal();
       document.getElementById('preview-close').focus();
