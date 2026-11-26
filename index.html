@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef8f5" id="theme-color">
+  <title>pitzwebapps developer | Web &amp; Mobile Development</title>
+  <meta name="description" content="Peter Waruiru helps businesses turn ideas into useful websites, web applications, and mobile experiences. Explore services and get in touch.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="pitzwebapps developer">
+  <meta property="og:description" content="Websites and applications built around your goals. Explore Peter Waruiru's services and get in touch.">
+  <meta property="og:image" content="https://images.pexels.com/photos/34803969/pexels-photo-34803969.jpeg">
+  <meta property="og:image:alt" content="Laptop displaying code beside a coffee mug; representative portfolio preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="pitzwebapps developer">
+  <meta name="twitter:description" content="Websites and applications built around your goals.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/34803969/pexels-photo-34803969.jpeg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"#peter-waruiru","name":"Peter Waruiru","jobTitle":"Web and mobile application developer","contactPoint":[{"@type":"ContactPoint","contactType":"phone","telephone":"0797986212"},{"@type":"ContactPoint","contactType":"WhatsApp","telephone":"0731059797","url":"https://wa.me/254731059797"}]},{"@type":"Service","name":"Web application development","provider":{"@id":"#peter-waruiru"}},{"@type":"Service","name":"Mobile application development","provider":{"@id":"#peter-waruiru"}}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root{--bg:#eef8f5;--text:#17323b;--muted:#435f66;--accent:#087e78;--line:rgba(30,83,85,.19);--glass:rgba(255,255,255,.72)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;overflow-x:clip}
+    body{margin:0;color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6;background:radial-gradient(ellipse 48% 36% at 88% 7%,rgba(95,218,199,.42),transparent 78%),radial-gradient(ellipse 48% 38% at 4% 43%,rgba(146,167,250,.28),transparent 77%),radial-gradient(ellipse 45% 30% at 90% 84%,rgba(255,174,123,.32),transparent 75%),linear-gradient(145deg,#f4fbf9,#e8f5f2 52%,#f8f4ef);overflow-wrap:break-word}
+    button,input,textarea{font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #075e5a;outline-offset:3px}
+    .shell{width:min(1180px,calc(100% - clamp(32px,6vw,96px)));margin-inline:auto}
+    .skip-link{position:absolute;left:12px;top:-80px;z-index:100;background:#fff;padding:12px;border-radius:10px}.skip-link:focus{top:12px}
+    .site-header{position:relative;z-index:10;background:rgba(249,255,253,.78);border-bottom:1px solid var(--line);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+    .header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:"Space Grotesk",sans-serif;font-size:20px;font-weight:700;letter-spacing:-.045em;display:inline-flex;align-items:center;line-height:1.1}
+    .brand-mark{display:inline-grid;place-items:center;flex:none;width:34px;height:34px;margin-right:9px;border-radius:10px;background:linear-gradient(135deg,#12bdb0,#7ce8ac);color:#093b3a;box-shadow:0 5px 14px rgba(23,106,105,.16)}
+    nav{display:flex;align-items:center;gap:25px}nav a{font-size:13px;font-weight:700;color:#36575a}nav a:hover{color:#075e5a}
+    .nav-cta{border:1px solid rgba(18,112,108,.35);border-radius:100px;padding:11px 18px;background:rgba(255,255,255,.75)}
+    .menu-toggle{display:none;border:0;background:transparent;color:var(--text);padding:10px;cursor:pointer}
+    h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Space Grotesk",sans-serif}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:#076c66;font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:1px;background:currentColor}
+    .hero{padding:85px 0 95px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:clamp(28px,6vw,74px)}
+    .hero>*{min-width:0}h1{font-size:clamp(48px,6.8vw,98px);line-height:1.02;letter-spacing:-.07em;margin:28px 0;font-weight:600}h1 span{color:#087e78}
+    .hero-copy{font-size:18px;max-width:550px;color:var(--muted);line-height:1.7;margin-bottom:30px}
+    .actions,.contact-links,.filters,.case-links{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+    .button{min-height:48px;display:inline-flex;justify-content:center;align-items:center;gap:10px;border:1px solid transparent;border-radius:100px;padding:12px 22px;font-size:14px;font-weight:700;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+    .button:hover{transform:translateY(-2px)}.button-primary{background:linear-gradient(135deg,#58dec5,#b6ef9b);color:#073d3b;box-shadow:0 10px 25px rgba(30,126,108,.18),inset 1px 1px 0 #fff}.button-primary:hover{background:#a9f3c6}
+    .button-secondary{border-color:#21817c;background:rgba(255,255,255,.72);color:#075e5a}.button-secondary:hover{background:#fff}
+    .button svg,.contact-links svg{width:18px;height:18px}
+    .hero-visual{height:510px;position:relative;border-radius:160px 160px 20px 20px;overflow:hidden;border:1px solid #fff;box-shadow:0 26px 60px rgba(30,88,87,.18);background:#b7d7d2}
+    .hero-visual img{width:100%;height:100%;object-fit:cover}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(7,32,35,.75))}
+    .visual-caption{position:absolute;z-index:1;bottom:19px;left:20px;right:20px;padding:14px 17px;border:1px solid rgba(255,255,255,.45);border-radius:14px;background:rgba(17,51,54,.72);backdrop-filter:blur(18px);color:#fff;display:flex;justify-content:space-between;gap:12px;font-family:"Space Grotesk",sans-serif}
+    .section{padding:90px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}.section-head>*{min-width:0}
+    .section-head h2,.contact h2,.not-found h2{font-size:clamp(36px,5vw,64px);letter-spacing:-.065em;line-height:1.07;margin:16px 0 0;font-weight:600;max-width:700px}.section-head p{color:var(--muted);max-width:370px;margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .glass{background:var(--glass);border:1px solid rgba(255,255,255,.9);border-radius:24px;box-shadow:0 20px 50px rgba(31,95,91,.1),inset 1px 1px 0 #fff;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+    .service-card{padding:30px;min-height:270px;display:flex;flex-direction:column;align-items:start}.service-icon{width:46px;height:46px;display:grid;place-items:center;color:#087e78;border:1px solid rgba(23,146,135,.3);border-radius:13px;background:rgba(80,213,187,.17);margin-bottom:auto}.service-icon svg{width:22px;height:22px}
+    .service-number{font-size:12px;color:#076c66;font-weight:700;margin:25px 0 7px}.service-card h3{font-size:23px;letter-spacing:-.04em;margin-bottom:9px}.service-card p,.project-body p,.trust-card p{color:var(--muted);font-size:14px;margin:0}
+    .projects{background:rgba(191,239,230,.24)}.filters{margin-bottom:25px}.filter-button{min-height:46px;padding:10px 17px;border:1px solid #6fa6a0;border-radius:100px;background:rgba(255,255,255,.8);color:#174b4b;font-size:14px;font-weight:700;cursor:pointer}.filter-button:hover{background:#fff}.filter-button[aria-pressed="true"]{background:#176c68;color:#fff;border-color:#176c68}
+    .project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project-card{overflow:hidden}.project-card[hidden]{display:none}
+    .project-media{height:205px;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#bfe9e0,#dce5fb 55%,#e5f4d8);border-bottom:1px solid var(--line);text-align:center;padding:12px;overflow:hidden}
+    .preview-trigger{display:block;width:100%;height:100%;border:0;background:transparent;padding:0;cursor:zoom-in;color:inherit}.concept{width:100%;height:100%;position:relative;display:grid;place-items:center;overflow:hidden}.concept-screen{width:min(86%,270px);height:143px;background:#fafffd;border:7px solid #264c50;border-radius:14px;box-shadow:0 18px 28px rgba(25,76,78,.22);overflow:hidden;text-align:left;transform:rotate(-3deg)}.concept-screen.phone{width:95px;height:165px;border-radius:20px;transform:rotate(5deg)}.concept-bar{height:22px;background:#173e43;color:white;font-size:9px;padding:4px 8px}.concept-title{font:bold 12px 'Space Grotesk',sans-serif;color:#17323b;margin:9px 10px 5px}.concept-row{margin:6px 10px;padding:6px;background:#def5e9;border-radius:5px;font-size:9px;color:#235653}.concept-row.accent{background:#68d9bc;color:#093b3a}.concept-qr{width:54px;height:54px;margin:8px auto;background:repeating-conic-gradient(#173e43 0 25%,#fff 0 50%) 0 0/14px 14px;border:5px solid white;box-shadow:0 0 0 1px #a9d7ca}.concept-label{position:absolute;bottom:9px;right:12px;background:#fff;border:1px solid #9dc8bd;border-radius:100px;padding:4px 10px;font-size:11px;font-weight:700;color:#175f5b}.preview-trigger:hover .concept-screen{transform:translateY(-3px) rotate(0)}.preview-dialog{border:1px solid #b8d5ce;border-radius:24px;max-width:min(560px,calc(100% - 32px));width:100%;padding:28px;background:#f6fffc;color:#17323b;box-shadow:0 30px 90px #123b3c66}.preview-dialog::backdrop{background:#102e36bb;backdrop-filter:blur(5px)}.preview-dialog .project-media{height:260px;border-radius:16px}.preview-close{float:right;border:1px solid #418c83;border-radius:100px;background:white;padding:8px 13px;cursor:pointer}.preview-dialog h3{margin:15px 0 4px}
+    .project-body{padding:26px}.project-body h3{font-size:22px;letter-spacing:-.04em;margin-bottom:8px}.project-type{display:inline-block;color:#075e5a;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}.placeholder-note{font-size:12px!important;margin-bottom:18px!important}
+    .case-details{margin:0;padding:0;list-style:none}.case-details li{padding:9px 0;border-top:1px solid var(--line);font-size:13px;color:#36575a}.case-details strong{color:var(--text)}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.trust-card{padding:25px;min-height:170px}.trust-card h3{font-size:19px;margin-bottom:10px}.trust-card strong{color:#075e5a}.editable{display:inline-block;border:1px dashed #6a9a95;border-radius:7px;padding:2px 6px;color:#36575a;background:rgba(255,255,255,.5)}
+    .skills-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,6vw,85px)}.skills-intro{color:var(--muted);font-size:17px;margin-top:22px}.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.skill-item{display:flex;align-items:center;gap:12px;padding:18px;font-size:14px;font-weight:600}.skill-item svg{width:19px;height:19px;flex:none;color:#087e78}
+    .contact{margin:30px auto 70px;padding:clamp(28px,5vw,65px);background:linear-gradient(120deg,rgba(129,229,193,.67),rgba(232,255,242,.77) 55%,rgba(159,214,255,.5));display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,65px)}.contact h2{margin-bottom:18px}.contact p{color:#35595b}.contact-links{margin-top:25px}.contact-links a{min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid #468c84;border-radius:100px;background:rgba(255,255,255,.65);font-size:13px;font-weight:700}.contact-links a:hover{background:#fff}
+    .contact-form{padding:28px}.contact-form h3{font-size:25px;margin-bottom:4px}.contact-form .form-intro{font-size:13px;margin-bottom:18px}.form-field{margin-bottom:15px}.form-field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.form-field input,.form-field textarea{width:100%;border:1px solid #699c98;border-radius:12px;background:rgba(255,255,255,.88);color:var(--text);font-size:16px;padding:12px 14px}.form-field textarea{min-height:125px;resize:vertical}.form-status{min-height:24px;font-size:13px;font-weight:700;margin:12px 0 0}.form-status.error{color:#9a2525}.form-status.success{color:#075e5a}
+    .floating-whatsapp{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:2147483000;min-height:52px;min-width:52px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 17px;border-radius:100px;background:#25d366;color:#10221a;font-size:14px;font-weight:700;border:1px solid #fff;box-shadow:0 8px 22px rgba(0,0,0,.2)}.floating-whatsapp:hover{background:#49e184}.floating-whatsapp svg{width:21px;height:21px}
+    footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{text-decoration:underline;color:#075e5a;font-weight:600}
+    .not-found{display:none;min-height:60vh;padding:90px 0}.not-found.active{display:block}.not-found p{max-width:520px;color:var(--muted);margin:20px 0}
+    @media(max-width:980px){.services,.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-visual{height:430px}}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0}.hero-visual{width:min(100%,580px);justify-self:center}.section{padding:70px 0}.section-head{display:block}.section-head p{margin-top:18px;max-width:600px}.contact,.skills-grid{grid-template-columns:1fr}}
+    @media(max-width:650px){.header-inner{min-height:72px}.brand{font-size:clamp(14px,3.8vw,17px)}.menu-toggle{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;padding:15px 18px 22px;background:rgba(248,255,253,.97);backdrop-filter:blur(22px);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{display:flex;align-items:center;min-height:44px;padding:10px}nav .nav-cta{justify-content:center;margin-top:8px}.hero{padding:53px 0 65px}h1{font-size:clamp(43px,11vw,70px)}.hero-copy{font-size:16px}.hero-visual{height:370px;border-radius:110px 110px 18px 18px}.services,.project-grid{grid-template-columns:1fr}.service-card{min-height:235px}.contact{margin-bottom:35px}.floating-whatsapp{right:max(12px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom))}}
+    @media(max-width:480px){.trust-grid,.skill-list{grid-template-columns:1fr}.hero-visual{height:320px}.contact-form{padding:20px}.contact-links a{width:100%;justify-content:center}.visual-caption{font-size:12px;left:12px;right:12px;bottom:12px;padding:10px}.filters{gap:8px}.filter-button{font-size:12px;padding:9px 12px}}
+    .header-actions{display:flex;align-items:center;gap:8px;flex:none}.theme-toggle{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:8px 14px;border:1px solid #4c8985;border-radius:100px;background:rgba(255,255,255,.78);color:#075e5a;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;box-shadow:0 4px 14px rgba(30,88,87,.08)}.theme-toggle:hover{background:#fff}.theme-toggle svg{width:18px;height:18px;flex:none}
+    .theme-sun{display:none}html[data-theme="dark"] .theme-sun{display:inline-flex}html[data-theme="dark"] .theme-moon{display:none}.theme-moon,.theme-sun{align-items:center}.theme-moon svg,.theme-sun svg{width:18px;height:18px}
+    html[data-theme="dark"]{color-scheme:dark;--bg:#0b1922;--text:#edf9f6;--muted:#c1d8d7;--accent:#6ce5d0;--line:rgba(168,231,222,.28);--glass:rgba(19,43,52,.88)}
+    html[data-theme="dark"] body{background:radial-gradient(ellipse 48% 36% at 88% 7%,rgba(25,148,139,.27),transparent 78%),radial-gradient(ellipse 48% 38% at 4% 43%,rgba(91,107,192,.23),transparent 77%),radial-gradient(ellipse 45% 30% at 90% 84%,rgba(156,90,61,.19),transparent 75%),linear-gradient(145deg,#0b1922,#102a31 52%,#181f2c)}
+    html[data-theme="dark"] .site-header{background:rgba(13,32,41,.9)}html[data-theme="dark"] nav a{color:#d9f1ed}html[data-theme="dark"] nav a:hover,html[data-theme="dark"] .eyebrow,html[data-theme="dark"] h1 span,html[data-theme="dark"] .service-number,html[data-theme="dark"] .project-type,html[data-theme="dark"] .trust-card strong,html[data-theme="dark"] .service-icon,html[data-theme="dark"] .skill-item svg,html[data-theme="dark"] .footer-links a{color:#79ead4}
+    html[data-theme="dark"] .glass{border-color:rgba(167,226,219,.32);box-shadow:0 20px 50px rgba(0,8,15,.28),inset 1px 1px 0 rgba(255,255,255,.08)}html[data-theme="dark"] .projects{background:rgba(52,124,119,.13)}html[data-theme="dark"] .nav-cta,html[data-theme="dark"] .theme-toggle,html[data-theme="dark"] .button-secondary,html[data-theme="dark"] .filter-button,html[data-theme="dark"] .contact-links a{background:rgba(20,54,62,.95);color:#e4f9f3;border-color:#85c6bd}html[data-theme="dark"] .theme-toggle:hover,html[data-theme="dark"] .button-secondary:hover,html[data-theme="dark"] .filter-button:hover,html[data-theme="dark"] .contact-links a:hover{background:#24545b}html[data-theme="dark"] .filter-button[aria-pressed="true"]{background:#a3efd5;color:#092b2c;border-color:#a3efd5}
+    html[data-theme="dark"] .case-details li,html[data-theme="dark"] .editable{color:#cce5e1;border-color:var(--line)}html[data-theme="dark"] .case-details strong{color:var(--text)}html[data-theme="dark"] .service-icon{background:rgba(80,213,187,.14)}html[data-theme="dark"] .contact{background:linear-gradient(120deg,rgba(20,92,83,.9),rgba(18,53,63,.95) 55%,rgba(38,67,106,.83))}html[data-theme="dark"] .contact p{color:#d8eeeb}html[data-theme="dark"] .form-field input,html[data-theme="dark"] .form-field textarea{background:#142e38;color:#f1fbf8;border-color:#93c6c0}html[data-theme="dark"] .form-status.error{color:#ffb5af}html[data-theme="dark"] .form-status.success{color:#a6f5cd}html[data-theme="dark"] .editable{background:rgba(255,255,255,.06)}html[data-theme="dark"] .preview-dialog{background:#142d37;color:#f2fbf8;border-color:#82b8b0}html[data-theme="dark"] .preview-close{background:#204952;color:#f2fbf8;border-color:#85c6bd}
+    @media(max-width:650px){.header-actions{margin-left:auto}.theme-toggle{padding:8px 11px}.theme-toggle .theme-label{display:none}html[data-theme="dark"] nav{background:rgba(13,32,41,.98)}.floating-whatsapp{width:54px;height:54px;padding:0}.floating-whatsapp span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.contact{padding-bottom:88px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a id="brand-link" class="brand" href="#top" aria-label="pitzwebapps developer, back to top"><span class="brand-mark" aria-hidden="true">p.</span>pitzwebapps developer</a>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#projects">Case studies</a>
+        <a href="#trust">About</a>
+        <a class="nav-cta" href="#contact">Hire Me <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-moon" aria-hidden="true"><i data-lucide="moon"></i></span><span class="theme-sun" aria-hidden="true"><i data-lucide="sun"></i></span><span class="theme-label">Dark mode</span></button>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><i data-lucide="menu" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div id="portfolio-content">
+      <section id="top" class="shell hero" aria-labelledby="hero-title">
+        <div>
+          <span class="eyebrow">Peter Waruiru · Web &amp; Mobile Developer</span>
+          <h1 id="hero-title">Build a better <span>digital experience</span> for your business.</h1>
+          <p class="hero-copy">I’m Peter Waruiru. I help turn your goals into clear, responsive websites and useful web or mobile applications—so people can connect with your business and get things done.</p>
+          <div class="actions">
+            <a id="hero-hire" class="button button-primary" href="#contact">Hire Me <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img id="hero-workspace-image" src="https://images.pexels.com/photos/34803969/pexels-photo-34803969.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" srcset="https://images.pexels.com/photos/34803969/pexels-photo-34803969.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/34803969/pexels-photo-34803969.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800 800w" sizes="(max-width:760px) 90vw, 45vw" alt="Laptop displaying code beside a coffee mug; illustrative workspace photograph" loading="eager" fetchpriority="high" decoding="async" width="800" height="900">
+          <div class="visual-caption">
+            <span>From first idea to useful product.</span><i data-lucide="asterisk" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section" aria-labelledby="services-title">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">What I can help with</span>
+              <h2 id="services-title">Development shaped around your goals.</h2>
+            </div>
+            <p>Choose the support that fits your next step, whether you’re starting fresh or making an existing product better.</p>
+          </div>
+          <div class="services">
+            <article class="service-card glass">
+              <div class="service-icon"><i data-lucide="panels-top-left" aria-hidden="true"></i></div>
+              <span class="service-number">01 / ONLINE PRESENCE</span>
+              <h3>Website development</h3>
+              <p>Give visitors a clear, responsive place to discover your business and take the next step.</p>
+            </article>
+            <article class="service-card glass">
+              <div class="service-icon"><i data-lucide="monitor" aria-hidden="true"></i></div>
+              <span class="service-number">02 / DIGITAL TOOLS</span>
+              <h3>Web applications</h3>
+              <p>Make tasks and information easier to manage with an experience built around how people work.</p>
+            </article>
+            <article class="service-card glass">
+              <div class="service-icon"><i data-lucide="smartphone" aria-hidden="true"></i></div>
+              <span class="service-number">03 / ON THE GO</span>
+              <h3>Mobile applications</h3>
+              <p>Put useful features within reach wherever your users need them.</p>
+            </article>
+            <article class="service-card glass">
+              <div class="service-icon"><i data-lucide="wrench" aria-hidden="true"></i></div>
+              <span class="service-number">04 / KEEP IMPROVING</span>
+              <h3>Maintenance &amp; improvements</h3>
+              <p>Refine usability, update features, and keep your existing experience working for your goals.</p>
+            </article>
+            <article class="service-card glass">
+              <div class="service-icon"><i data-lucide="workflow" aria-hidden="true"></i></div>
+              <span class="service-number">05 / MADE FOR YOU</span>
+              <h3>Custom business solutions</h3>
+              <p>Explore a tailored approach when off-the-shelf tools don’t fit your process.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Selected project stories</span>
+              <h2 id="projects-title">Ideas built around real needs.</h2>
+            </div>
+            <p>Explore the supplied project details and interactive concept previews below.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter case studies">
+            <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All projects</button>
+            <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web apps</button>
+            <button class="filter-button" type="button" data-filter="mobile" aria-pressed="false">Mobile apps</button>
+            <button class="filter-button" type="button" data-filter="website" aria-pressed="false">Business websites</button>
+          </div>
+          <p id="filter-status" role="status" aria-live="polite">Showing all 4 project stories.</p>
+          <div class="project-grid">
+            <article id="safari-case" class="project-card glass" data-category="mobile">
+              <div class="project-media">
+                <button class="preview-trigger" type="button" data-preview="safari" aria-label="Enlarge Safari Puzzle preview">
+                  <div class="concept">
+                    <div class="concept-screen phone">
+                      <div class="concept-bar">Safari Puzzle</div>
+                      <div class="concept-title">400 Levels</div>
+                      <div class="concept-row accent">20 African Worlds</div>
+                      <div class="concept-row">3D Match-3</div>
+                      <div class="concept-row">Offline &amp; Sync</div>
+                    </div>
+                    <span class="concept-label">Android Game</span>
+                  </div>
+                </button>
+              </div>
+              <div class="project-body">
+                <span class="project-type">Mobile game · Android</span>
+                <h3>Safari Puzzle</h3>
+                <p class="placeholder-note">3D African wildlife match-3 puzzle adventure</p>
+                <ul class="case-details">
+                  <li><strong>Overview:</strong> 400 handcrafted levels across 20 African worlds with a Wildlife Journal and Safari Reserve.</li>
+                  <li><strong>Technologies:</strong> Kotlin, Jetpack Compose, Android SDK, Google Cloud Sync.</li>
+                  <li><strong>Availability:</strong> Offline-first gameplay with optional cloud save backup.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article id="stylush-case" class="project-card glass" data-category="web">
+              <div class="project-media">
+                <button class="preview-trigger" type="button" data-preview="stylush" aria-label="Enlarge Stylush booking concept preview">
+                  <div class="concept">
+                    <div class="concept-screen">
+                      <div class="concept-bar">Stylush Salon &amp; Barber</div>
+                      <div class="concept-title">Book Appointment</div>
+                      <div class="concept-row accent">Hair Styling · Barber · Beauty</div>
+                      <div class="concept-row">Instant Slot Confirmation</div>
+                    </div>
+                    <span class="concept-label">Web App</span>
+                  </div>
+                </button>
+              </div>
+              <div class="project-body">
+                <span class="project-type">Web app · Salon booking</span>
+                <h3>Stylush Hair &amp; Beauty College Salon &amp; Barber</h3>
+                <p class="placeholder-note">Supplied project summary</p>
+                <ul class="case-details">
+                  <li><strong>Problem:</strong> Difficulty retaining and reaching regular customers efficiently.</li>
+                  <li><strong>Solution:</strong> A booking system for salon and barbershop services.</li>
+                  <li><strong>Technologies:</strong> TypeScript, JavaScript, Python.</li>
+                  <li><strong>Outcome:</strong> Faster service and an enhanced customer experience.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article id="qrpay-case" class="project-card glass" data-category="mobile">
+              <div class="project-media">
+                <button class="preview-trigger" type="button" data-preview="qrpay" aria-label="Enlarge QRPay Kenya preview">
+                  <div class="concept">
+                    <div class="concept-screen phone">
+                      <div class="concept-bar">QRPay Kenya</div>
+                      <div class="concept-title">Scan &amp; Pay</div>
+                      <div class="concept-qr"></div>
+                      <div class="concept-row accent">Verified Merchant</div>
+                    </div>
+                    <span class="concept-label">Mobile App</span>
+                  </div>
+                </button>
+              </div>
+              <div class="project-body">
+                <span class="project-type">Mobile app · QR payments</span>
+                <h3>QRPay Kenya</h3>
+                <p class="placeholder-note">Supplied project summary</p>
+                <ul class="case-details">
+                  <li><strong>Problem:</strong> Manual entry of transaction details caused errors and payments to wrong recipients.</li>
+                  <li><strong>Solution:</strong> Dynamic QR codes for each transaction reduce manual-entry errors.</li>
+                  <li><strong>Technologies:</strong> JavaScript, C, CMake, Flutter.</li>
+                  <li><strong>Outcome:</strong> Fast, reliable, and secure transactions.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article id="kishbuilds-case" class="project-card glass" data-category="website">
+              <div class="project-media">
+                <button class="preview-trigger" type="button" data-preview="kishbuilds" aria-label="Enlarge Kishbuilds website preview">
+                  <div class="concept">
+                    <div class="concept-screen">
+                      <div class="concept-bar">Kishbuilds Construction</div>
+                      <div class="concept-title">Plan &amp; Build Together</div>
+                      <div class="concept-row accent">1-on-1 Developer &amp; Mason Consultation</div>
+                      <div class="concept-row">Milestone Project Tracking</div>
+                    </div>
+                    <span class="concept-label">Business Site</span>
+                  </div>
+                </button>
+              </div>
+              <div class="project-body">
+                <span class="project-type">Business website · Kishbuilds</span>
+                <h3>Kishbuilds Construction Website</h3>
+                <p class="placeholder-note">Supplied project summary</p>
+                <ul class="case-details">
+                  <li><strong>Challenge:</strong> Lack of a medium where clients can plan and execute projects directly with developers.</li>
+                  <li><strong>Solution:</strong> Enables direct one-on-one planning with developers and masons.</li>
+                  <li><strong>Technologies:</strong> TypeScript, JavaScript, Python, CSS.</li>
+                  <li><strong>Outcome:</strong> Clients plan and execute construction projects orderly and gradually.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <dialog id="preview-dialog" class="preview-dialog" aria-labelledby="preview-title">
+            <button id="preview-close" class="preview-close" type="button" aria-label="Close preview">Close ×</button>
+            <h3 id="preview-title">Project visual</h3>
+            <p id="preview-description">Interactive project preview.</p>
+            <div id="preview-content" class="project-media"></div>
+          </dialog>
+        </div>
+      </section>
+
+      <section id="trust" class="section" aria-labelledby="trust-title">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">What’s documented so far</span>
+              <h2 id="trust-title">Clear work. Honest proof.</h2>
+            </div>
+            <p>Project descriptions are based on supplied information and shipped applications.</p>
+          </div>
+          <div class="trust-grid">
+            <article class="trust-card glass">
+              <h3>Projects named</h3>
+              <p>Safari Puzzle; Stylush Hair &amp; Beauty College Salon &amp; Barber; QRPay Kenya; Kishbuilds Construction Website.</p>
+            </article>
+            <article class="trust-card glass">
+              <h3>Service categories</h3>
+              <p>Mobile games &amp; apps · Salon booking web app · QR payment mobile app · Construction-business website.</p>
+            </article>
+            <article class="trust-card glass">
+              <h3>Technologies listed</h3>
+              <p>Kotlin, Jetpack Compose, Flutter, TypeScript, JavaScript, Python, C, CMake, CSS.</p>
+            </article>
+            <article class="trust-card glass">
+              <h3>Policies &amp; verification</h3>
+              <p><a href="privacy.html" style="text-decoration:underline;font-weight:700">Privacy Policy</a> · <a href="app-ads.txt" style="text-decoration:underline;font-weight:700">app-ads.txt</a></p>
+            </article>
+            <article class="trust-card glass">
+              <h3>Project count</h3>
+              <p>10+ completed projects across web and mobile.</p>
+            </article>
+            <article class="trust-card glass">
+              <h3>Years of experience</h3>
+              <p>2+ Years of Experience</p>
+            </article>
+            <article class="trust-card glass">
+              <h3>Certifications</h3>
+              <p><span class="editable">Details to be verified</span></p>
+            </article>
+            <article class="trust-card glass">
+              <h3>Testimonials</h3>
+              <p>Stylush shared that the website boosted their reach to more customers nationwide.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="shell skills-grid">
+          <div>
+            <span class="eyebrow">How I approach the work</span>
+            <h2 id="skills-title" style="font-size:clamp(36px,5vw,64px);line-height:1.07;letter-spacing:-.065em;margin:18px 0 0;font-weight:600">The right details matter.</h2>
+            <p class="skills-intro">Good applications are more than a collection of features. They need to feel clear to use, work across devices, and serve a real purpose.</p>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item glass"><i data-lucide="layout-template" aria-hidden="true"></i>Responsive interfaces</div>
+            <div class="skill-item glass"><i data-lucide="route" aria-hidden="true"></i>User-focused flows</div>
+            <div class="skill-item glass"><i data-lucide="blocks" aria-hidden="true"></i>Application development</div>
+            <div class="skill-item glass"><i data-lucide="scan-smartphone" aria-hidden="true"></i>Mobile-first thinking</div>
+            <div class="skill-item glass"><i data-lucide="messages-square" aria-hidden="true"></i>Clear collaboration</div>
+            <div class="skill-item glass"><i data-lucide="puzzle" aria-hidden="true"></i>Practical problem-solving</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="shell contact glass" aria-labelledby="contact-title">
+        <div>
+          <span class="eyebrow">Let's talk about your idea</span>
+          <h2 id="contact-title">Have something in mind?</h2>
+          <p>Tell Peter what you’re looking to build. Prefer a direct conversation? Calling, email, and WhatsApp are just a tap away.</p>
+          <div class="contact-links" aria-label="Contact options">
+            <a id="call-contact" href="tel:+254797986212"><i data-lucide="phone" aria-hidden="true"></i>Call: 0797986212</a>
+            <a id="whatsapp-contact" href="https://wa.me/254731059797" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" aria-hidden="true"></i>WhatsApp: 0731059797</a>
+            <a id="email-contact" href="mailto:waruirupitz@gmail.com"><i data-lucide="mail" aria-hidden="true"></i>waruirupitz@gmail.com</a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form glass" novalidate>
+          <h3>Send a project enquiry</h3>
+          <p class="form-intro">Fill in your details below to send your enquiry directly to Peter via email.</p>
+          <div class="form-field">
+            <label for="contact-name">Name</label><input id="contact-name" name="name" autocomplete="name" required maxlength="120">
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254">
+          </div>
+          <div class="form-field">
+            <label for="project-details">Project details</label><textarea id="project-details" name="project_details" required maxlength="3000" placeholder="What would you like to build or improve?"></textarea>
+          </div>
+          <button id="contact-submit" class="button button-primary" type="submit">Send enquiry <i data-lucide="send" aria-hidden="true"></i></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+
+    <section id="not-found" class="shell not-found" aria-labelledby="not-found-title">
+      <span class="eyebrow">404 · Page not found</span>
+      <h2 id="not-found-title">That page isn’t here.</h2>
+      <p>The page you’re looking for isn’t part of this portfolio. Head back to the main page or reach out to Peter directly.</p>
+      <a class="button button-primary" href="#top">Back to portfolio <i data-lucide="arrow-left" aria-hidden="true"></i></a>
+    </section>
+  </main>
+
+  <a id="floating-whatsapp" class="floating-whatsapp" href="https://wa.me/254731059797" target="_blank" rel="noopener noreferrer" aria-label="Chat with Peter on WhatsApp at 0731059797"><i data-lucide="message-circle" aria-hidden="true"></i><span>WhatsApp</span></a>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>© <span id="year"></span> pitzwebapps developer · Peter Waruiru</span>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="app-ads.txt">app-ads.txt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const themeButton = document.getElementById('theme-toggle');
+    const themeLabel = themeButton.querySelector('.theme-label');
+    function applyTheme(theme) {
+      const dark = theme === 'dark';
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      document.getElementById('theme-color').content = dark ? '#0b1922' : '#eef8f5';
+      themeButton.setAttribute('aria-pressed', String(dark));
+      themeButton.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      themeLabel.textContent = dark ? 'Light mode' : 'Dark mode';
+    }
+    let savedTheme;
+    try { savedTheme = localStorage.getItem('pitzwebapps-theme'); } catch (_) {}
+    applyTheme(savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    themeButton.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      try { localStorage.setItem('pitzwebapps-theme', next); } catch (_) {}
+    });
+
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open navigation');
+    }));
+
+    const cards = [...document.querySelectorAll('.project-card')];
+    const filterStatus = document.getElementById('filter-status');
+    document.querySelectorAll('.filter-button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.filter-button').forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+        const filter = button.dataset.filter;
+        cards.forEach(card => { card.hidden = filter !== 'all' && card.dataset.category !== filter; });
+        const count = cards.filter(card => !card.hidden).length;
+        filterStatus.textContent = filter === 'all' ? `Showing all ${count} project stories.` : `Showing ${count} ${button.textContent.toLowerCase()} project stor${count === 1 ? 'y' : 'ies'}.`;
+      });
+    });
+
+    const previewDialog = document.getElementById('preview-dialog');
+    const previewContent = document.getElementById('preview-content');
+    let previewOpener = null;
+    document.querySelectorAll('.preview-trigger').forEach(button => button.addEventListener('click', () => {
+      previewOpener = button;
+      const card = button.closest('.project-card');
+      document.getElementById('preview-title').textContent = card.querySelector('h3').textContent + ' · Project visual';
+      const clone = button.querySelector('.concept').cloneNode(true);
+      previewContent.replaceChildren(clone);
+      previewDialog.showModal();
+      document.getElementById('preview-close').focus();
+    }));
+    document.getElementById('preview-close').addEventListener('click', () => previewDialog.close());
+    previewDialog.addEventListener('close', () => previewOpener?.focus());
+    previewDialog.addEventListener('click', event => { if (event.target === previewDialog) previewDialog.close(); });
+
+    const knownHashes = new Set(['', '#top', '#intro', '#services', '#projects', '#trust', '#skills', '#contact', '#main-content', '#404']);
+    function updateRoute() {
+      const missing = !knownHashes.has(location.hash) || location.hash === '#404';
+      document.getElementById('portfolio-content').hidden = missing;
+      document.getElementById('not-found').classList.toggle('active', missing);
+    }
+    window.addEventListener('hashchange', updateRoute);
+    updateRoute();
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const name = document.getElementById('contact-name').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const details = document.getElementById('project-details').value.trim();
+      const subject = encodeURIComponent(`Project Enquiry from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nProject Details:\n${details}`);
+      status.textContent = 'Opening your email app to send the enquiry…';
+      status.className = 'form-status success';
+      window.location.href = `mailto:waruirupitz@gmail.com?subject=${subject}&body=${body}`;
+    });
+    lucide.createIcons();
+  </script>
+</body>
+</html>
